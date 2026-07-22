@@ -1,0 +1,201 @@
+<svg viewBox="0 0 1160 1000" xmlns="http://www.w3.org/2000/svg" font-family="IBM Plex Sans, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6C8CFF"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#F2A93B"/>
+    </marker>
+    <linearGradient id="bandFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#161F36"/>
+      <stop offset="100%" stop-color="#10182A"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1160" height="1000" fill="#0A0F1A"/>
+  <!-- faint blueprint grid -->
+  <g opacity="0.06" stroke="#6C8CFF" stroke-width="1">
+    <g id="vlines"></g>
+  </g>
+  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+    <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#6C8CFF" stroke-width="0.6" opacity="0.08"/>
+  </pattern>
+  <rect x="0" y="0" width="1160" height="1000" fill="url(#grid)"/>
+
+  <!-- Header -->
+  <text x="40" y="46" fill="#E6EAF3" font-family="Space Grotesk, sans-serif" font-size="24" font-weight="700">AXIS — System Architecture</text>
+  <text x="40" y="68" fill="#8592AD" font-size="12.5">Unified Asset &amp; Operations Brain — from raw plant documents to answers at the point of need</text>
+
+  <!-- ===================== BAND 1: SOURCES ===================== -->
+  <text x="40" y="108" fill="#5B6789" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1">01 — HETEROGENEOUS SOURCE SYSTEMS</text>
+  <g font-size="11.5">
+    <!-- 7 boxes -->
+    <g id="b1">
+      <!-- box template repeated -->
+    </g>
+    <!-- box 1 -->
+    <rect x="40" y="118" width="140" height="52" rx="7" fill="#161F36" stroke="#26314E"/>
+    <text x="110" y="140" text-anchor="middle" fill="#E6EAF3" font-weight="500">P&amp;IDs &amp;</text>
+    <text x="110" y="156" text-anchor="middle" fill="#E6EAF3" font-weight="500">Drawings</text>
+    <!-- box 2 -->
+    <rect x="192" y="118" width="140" height="52" rx="7" fill="#161F36" stroke="#26314E"/>
+    <text x="262" y="140" text-anchor="middle" fill="#E6EAF3" font-weight="500">CMMS Work</text>
+    <text x="262" y="156" text-anchor="middle" fill="#E6EAF3" font-weight="500">Orders</text>
+    <!-- box 3 -->
+    <rect x="344" y="118" width="140" height="52" rx="7" fill="#161F36" stroke="#26314E"/>
+    <text x="414" y="140" text-anchor="middle" fill="#E6EAF3" font-weight="500">SOPs &amp;</text>
+    <text x="414" y="156" text-anchor="middle" fill="#E6EAF3" font-weight="500">Procedures</text>
+    <!-- box 4 -->
+    <rect x="496" y="118" width="140" height="52" rx="7" fill="#161F36" stroke="#26314E"/>
+    <text x="566" y="140" text-anchor="middle" fill="#E6EAF3" font-weight="500">Inspection</text>
+    <text x="566" y="156" text-anchor="middle" fill="#E6EAF3" font-weight="500">Reports</text>
+    <!-- box 5 -->
+    <rect x="648" y="118" width="140" height="52" rx="7" fill="#161F36" stroke="#26314E"/>
+    <text x="718" y="140" text-anchor="middle" fill="#E6EAF3" font-weight="500">Regulatory &amp;</text>
+    <text x="718" y="156" text-anchor="middle" fill="#E6EAF3" font-weight="500">Standards</text>
+    <!-- box 6 -->
+    <rect x="800" y="118" width="140" height="52" rx="7" fill="#161F36" stroke="#26314E"/>
+    <text x="870" y="140" text-anchor="middle" fill="#E6EAF3" font-weight="500">Email</text>
+    <text x="870" y="156" text-anchor="middle" fill="#E6EAF3" font-weight="500">Archives</text>
+    <!-- box 7 -->
+    <rect x="952" y="118" width="168" height="52" rx="7" fill="#161F36" stroke="#26314E"/>
+    <text x="1036" y="140" text-anchor="middle" fill="#E6EAF3" font-weight="500">OEM Manuals &amp;</text>
+    <text x="1036" y="156" text-anchor="middle" fill="#E6EAF3" font-weight="500">Vendor Docs</text>
+  </g>
+
+  <!-- connectors band1 -> band2 (converge to center) -->
+  <g stroke="#26314E" stroke-width="1.4" fill="none">
+    <path d="M110,170 L110,190 L580,190" />
+    <path d="M262,170 L262,190" />
+    <path d="M414,170 L414,190" />
+    <path d="M566,170 L566,190" />
+    <path d="M718,170 L718,190" />
+    <path d="M870,170 L870,190 L580,190" />
+    <path d="M1036,170 L1036,190 L580,190" />
+    <path d="M580,190 L580,210" marker-end="url(#arrow)" stroke="#6C8CFF" stroke-width="1.8"/>
+  </g>
+
+  <!-- ===================== BAND 2: INGESTION ===================== -->
+  <text x="40" y="234" fill="#5B6789" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1">02 — INGESTION &amp; EXTRACTION</text>
+  <g font-size="12">
+    <rect x="40" y="244" width="255" height="58" rx="7" fill="#10182A" stroke="#37D6C4" stroke-width="1.2"/>
+    <text x="167" y="268" text-anchor="middle" fill="#E6EAF3" font-weight="600">OCR / Document</text>
+    <text x="167" y="285" text-anchor="middle" fill="#E6EAF3" font-weight="600">Intelligence</text>
+
+    <rect x="310" y="244" width="255" height="58" rx="7" fill="#10182A" stroke="#37D6C4" stroke-width="1.2"/>
+    <text x="437" y="268" text-anchor="middle" fill="#E6EAF3" font-weight="600">Computer Vision</text>
+    <text x="437" y="285" text-anchor="middle" fill="#E6EAF3" font-weight="600">(P&amp;ID Parsing)</text>
+
+    <rect x="580" y="244" width="255" height="58" rx="7" fill="#10182A" stroke="#37D6C4" stroke-width="1.2"/>
+    <text x="707" y="268" text-anchor="middle" fill="#E6EAF3" font-weight="600">Entity Extraction</text>
+    <text x="707" y="285" text-anchor="middle" fill="#E6EAF3" font-weight="600">(NER — tags, dates, standards)</text>
+
+    <rect x="850" y="244" width="270" height="58" rx="7" fill="#10182A" stroke="#37D6C4" stroke-width="1.2"/>
+    <text x="985" y="268" text-anchor="middle" fill="#E6EAF3" font-weight="600">Schema</text>
+    <text x="985" y="285" text-anchor="middle" fill="#E6EAF3" font-weight="600">Normalization</text>
+  </g>
+
+  <!-- connectors band2 -> band3 -->
+  <g stroke="#6C8CFF" stroke-width="1.6" fill="none">
+    <path d="M167,302 L167,318 L580,318" />
+    <path d="M437,302 L437,318" />
+    <path d="M707,302 L707,318" />
+    <path d="M985,302 L985,318 L580,318" />
+    <path d="M580,318 L580,336" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ===================== BAND 3: KNOWLEDGE LAYER ===================== -->
+  <text x="40" y="360" fill="#5B6789" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1">03 — UNIFIED KNOWLEDGE LAYER</text>
+  <g>
+    <rect x="200" y="372" width="330" height="64" rx="8" fill="#161F36" stroke="#6C8CFF" stroke-width="1.6"/>
+    <text x="365" y="398" text-anchor="middle" fill="#E6EAF3" font-size="13" font-weight="600">Knowledge Graph</text>
+    <text x="365" y="416" text-anchor="middle" fill="#8592AD" font-size="10.5">entities, equipment tags, relationships</text>
+
+    <rect x="630" y="372" width="330" height="64" rx="8" fill="#161F36" stroke="#6C8CFF" stroke-width="1.6"/>
+    <text x="795" y="398" text-anchor="middle" fill="#E6EAF3" font-size="13" font-weight="600">Vector Index</text>
+    <text x="795" y="416" text-anchor="middle" fill="#8592AD" font-size="10.5">semantic embeddings for retrieval</text>
+
+    <path d="M530,404 L630,404" stroke="#6C8CFF" stroke-width="1.6" marker-end="url(#arrow)" marker-start="url(#arrow)" fill="none"/>
+  </g>
+
+  <!-- connectors band3 -> band4 -->
+  <path d="M580,436 L580,460" stroke="#6C8CFF" stroke-width="1.8" marker-end="url(#arrow)" fill="none"/>
+
+  <!-- ===================== BAND 4: AGENTIC LAYER ===================== -->
+  <text x="40" y="484" fill="#5B6789" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1">04 — AGENTIC INTELLIGENCE LAYER</text>
+  <g font-size="12">
+    <rect x="40" y="494" width="255" height="66" rx="7" fill="#10182A" stroke="#F2A93B" stroke-width="1.2"/>
+    <text x="167" y="520" text-anchor="middle" fill="#E6EAF3" font-weight="600">Expert Knowledge</text>
+    <text x="167" y="537" text-anchor="middle" fill="#E6EAF3" font-weight="600">Copilot (RAG)</text>
+
+    <rect x="310" y="494" width="255" height="66" rx="7" fill="#10182A" stroke="#F2A93B" stroke-width="1.2"/>
+    <text x="437" y="520" text-anchor="middle" fill="#E6EAF3" font-weight="600">Maintenance &amp;</text>
+    <text x="437" y="537" text-anchor="middle" fill="#E6EAF3" font-weight="600">RCA Agent</text>
+
+    <rect x="580" y="494" width="255" height="66" rx="7" fill="#10182A" stroke="#F2A93B" stroke-width="1.2"/>
+    <text x="707" y="520" text-anchor="middle" fill="#E6EAF3" font-weight="600">Compliance &amp;</text>
+    <text x="707" y="537" text-anchor="middle" fill="#E6EAF3" font-weight="600">Quality Agent</text>
+
+    <rect x="850" y="494" width="270" height="66" rx="7" fill="#10182A" stroke="#F2A93B" stroke-width="1.2"/>
+    <text x="985" y="520" text-anchor="middle" fill="#E6EAF3" font-weight="600">Lessons Learned</text>
+    <text x="985" y="537" text-anchor="middle" fill="#E6EAF3" font-weight="600">&amp; Failure Intelligence</text>
+  </g>
+
+  <!-- connectors band4 -> band5 -->
+  <g stroke="#F2A93B" stroke-width="1.6" fill="none">
+    <path d="M167,560 L167,580 L580,580" />
+    <path d="M437,560 L437,580" />
+    <path d="M707,560 L707,580" />
+    <path d="M985,560 L985,580 L580,580" />
+    <path d="M580,580 L580,598" marker-end="url(#arrowAmber)"/>
+  </g>
+
+  <!-- ===================== BAND 5: EXPERIENCE LAYER ===================== -->
+  <text x="40" y="622" fill="#5B6789" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1">05 — EXPERIENCE LAYER</text>
+  <g font-size="12.5">
+    <rect x="40" y="632" width="340" height="54" rx="7" fill="#161F36" stroke="#26314E"/>
+    <text x="210" y="664" text-anchor="middle" fill="#E6EAF3" font-weight="600">Web &amp; Mobile Dashboard</text>
+
+    <rect x="410" y="632" width="340" height="54" rx="7" fill="#161F36" stroke="#26314E"/>
+    <text x="580" y="664" text-anchor="middle" fill="#E6EAF3" font-weight="600">Conversational Chat Interface</text>
+
+    <rect x="780" y="632" width="340" height="54" rx="7" fill="#161F36" stroke="#26314E"/>
+    <text x="950" y="664" text-anchor="middle" fill="#E6EAF3" font-weight="600">Proactive Alerts &amp; Signals</text>
+  </g>
+
+  <!-- connectors band5 -> band6 -->
+  <g stroke="#26314E" stroke-width="1.6" fill="none">
+    <path d="M210,686 L210,702 L580,702" />
+    <path d="M580,686 L580,702" />
+    <path d="M950,686 L950,702 L580,702" />
+    <path d="M580,702 L580,720" marker-end="url(#arrow)" stroke="#6C8CFF"/>
+  </g>
+
+  <!-- ===================== BAND 6: USERS ===================== -->
+  <text x="40" y="744" fill="#5B6789" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1">06 — PLANT USERS</text>
+  <g font-size="11.5">
+    <rect x="40" y="754" width="200" height="48" rx="20" fill="#0A0F1A" stroke="#37D6C4" stroke-width="1.2"/>
+    <text x="140" y="783" text-anchor="middle" fill="#E6EAF3">Field Technicians</text>
+
+    <rect x="260" y="754" width="200" height="48" rx="20" fill="#0A0F1A" stroke="#37D6C4" stroke-width="1.2"/>
+    <text x="360" y="783" text-anchor="middle" fill="#E6EAF3">Process Engineers</text>
+
+    <rect x="480" y="754" width="200" height="48" rx="20" fill="#0A0F1A" stroke="#37D6C4" stroke-width="1.2"/>
+    <text x="580" y="783" text-anchor="middle" fill="#E6EAF3">Maintenance Teams</text>
+
+    <rect x="700" y="754" width="200" height="48" rx="20" fill="#0A0F1A" stroke="#37D6C4" stroke-width="1.2"/>
+    <text x="800" y="783" text-anchor="middle" fill="#E6EAF3">Compliance / QA</text>
+
+    <rect x="920" y="754" width="200" height="48" rx="20" fill="#0A0F1A" stroke="#37D6C4" stroke-width="1.2"/>
+    <text x="1020" y="783" text-anchor="middle" fill="#E6EAF3">Leadership</text>
+  </g>
+
+  <!-- ===================== FEEDBACK LOOP ===================== -->
+  <path d="M1120,778 C1150,778 1150,140 1120,140" fill="none" stroke="#F2A93B" stroke-width="1.6" stroke-dasharray="5,4" marker-end="url(#arrowAmber)"/>
+  <text x="1156" y="460" fill="#F2A93B" font-family="IBM Plex Mono, monospace" font-size="10.5" text-anchor="middle" transform="rotate(90 1156 460)">CONTINUOUS RE-INGESTION — new work orders, incidents &amp; inspections keep the graph current</text>
+
+  <!-- ===================== FOOTNOTE ===================== -->
+  <line x1="40" y1="850" x2="1120" y2="850" stroke="#26314E" stroke-width="1"/>
+  <text x="40" y="878" fill="#5B6789" font-size="11">Grounding: every Copilot answer, RCA flag and compliance gap traces back to a specific source document — no ungrounded generation.</text>
+  <text x="40" y="898" fill="#5B6789" font-size="11">Scalability: ingestion, extraction, and each agent run as independently scalable services against the shared knowledge layer.</text>
+</svg>
